@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.clock {
+  background: whitesmoke;
+  width: 400px;
+  height: 400px;
+  margin: 8% auto 0;
+  border-radius: 50%;
+  border: 14px solid rgb(51, 49, 49);
+  position: relative;
+ box-shadow: 0 10px 14px 3px black;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(192, 187, 187);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 4px -1px black;
+}
+
+.hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 4px;
+  height: 65px;
+  background:rgb(75, 74, 74);
+  top: 115px;
+  transform-origin: 50% 72px;
+  left: 50%;
+  margin-left: -2px;
+
+}
+
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  background: grey;
+  top: 80px;
+  left: 50%;
+  margin-left: -2px;
+ transform-origin: 50% 105px;
+  
+}
+
+.second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 2px;
+  height: 120px;
+  background: gold;
+  top: 60px;
+  lefT: 50%;
+  margin-left: -1px;
+transform-origin: 50% 125px; 
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  color: rgb(47, 46, 46);
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.h12 {
+  top: 30px;
+  left: 50%;
+  margin-left: -10px;
+}
+.h3 {
+  top: 175px;
+  right: 30px;
+}
+.h6 {
+  bottom: 30px;
+  left: 50%;
+  margin-left: -6px;
+}
+.h9 {
+  left: 32px;
+  top: 175px;
+}
+
+.h1{  
+    top: 54px;
+    left: 68%;
+}
+.h2{
+   top: 105px;
+    left: 82%;
+}
+.h4{
+    top: 250px;
+    left: 82%;
+}
+.h5{
+     top: 300px;
+    left: 68%;
+}
+.h11{
+     top: 54px;
+    left: 26%;
+}
+.h10{
+   top: 105px;
+    left: 12%;
+}
+.h7{
+     top: 300px;
+    left: 28%;
+}
+.h8{
+    top: 250px;
+    left: 15%;
+}

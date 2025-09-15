@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="outercircle">
+  <span class="rect"></span><span class="circle"></span>
+            <div class="container"> 
+                <div class="timer">
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let setTime = prompt('Enter the timer in minutes');
+        let minutes = document.getElementById('min');
+        let seconds = document.getElementById('sec');
+
+        let totalSeconds = parseInt(setTime) * 60;
+        let countdown = setInterval(function() {
+            let mins = Math.floor(totalSeconds / 60);
+            let secs = totalSeconds % 60;
+            minutes.textContent = mins.toString().padStart(2, '0');
+            seconds.textContent = secs.toString().padStart(2, '0');
+            totalSeconds--;
+            if (totalSeconds < 0) {
+                clearInterval(countdown);
+            }
+        }, 1000);
+
+       
+
+    </script>
+</body>
+</html>
