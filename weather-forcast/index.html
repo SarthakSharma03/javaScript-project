@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-Forcast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="input-container">
+        <input class="city-input" type="text" placeholder="Search City" />
+        <button class="search-btn" >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </header>
+      <section class="weather-info" >
+        <div class="location">
+          <span class="location-info">
+            <button class="location-btn" type="submit">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+            <h2 class="city-text">indore</h2>
+          </span>
+          <h5 class="city-date">123456</h5>
+        </div>
+        <div class="weather-img">
+          <img src="./clear.svg" alt=""  class="weather-summary-img"/>
+          <span>
+            <h2 class="temperature-icon">fn<i class="fa-solid fa-temperature-high"></i></h2>
+            <h3 class="condition-txt">clouds</h3>
+          </span>
+        </div>
+        <div class="weather-additional-info">
+          <div class="humidity">
+            <span class="humidity-icon">
+              <i class="fa-solid fa-droplet"></i>
+            </span>
+            <span class="humidity-info">
+              <h2>Humidity</h2>
+              <h3 class="humidity-value">55%</h3>
+            </span>
+          </div>
+          <div class="humidity">
+            <span class="humidity-icon">
+             <i class="fa-solid fa-wind"></i>
+            </span>
+            <span class="humidity-info">
+              <h2>Humidity</h2>
+              <h3 class="wind-value-txt">55  M/s</h3>
+            </span>
+          </div>
+        </div>
+        <div class="forcast">
+
+            <div class="forcast-info">
+                <h3>02 SEP</h3>
+                <img src="./clear.svg" alt="">
+                <h3>23<i class="fa-solid fa-temperature-high"></i> </h3>
+            </div>
+            <div class="forcast-info">
+                <h3>02 SEP</h3>
+                <img src="./clear.svg" alt="">
+                <h3>23<i class="fa-solid fa-temperature-high"></i> </h3>
+            </div>
+            <div class="forcast-info">
+                <h3>02 SEP</h3>
+                <img src="./clear.svg" alt="">
+                <h3>23<i class="fa-solid fa-temperature-high"></i> </h3>
+            </div>
+            <div class="forcast-info">
+                <h3>02 SEP</h3>
+                <img src="./clear.svg" alt="">
+                <h3>23<i class="fa-solid fa-temperature-high"></i> </h3>
+            </div>
+        <div class="forcast-info">
+         <h3>02 SEP</h3>
+         <img src="./clear.svg" alt="">
+         <h3>23<i class="fa-solid fa-temperature-high"></i> </h3>
+        </div>
+        <div class="forcast-info">
+            <h3>02 SEP</h3>
+            <img src="./clear.svg" alt="">
+            <h3>23<i class="fa-solid fa-temperature-high"></i> </h3>
+        </div>
+    </div>
+      </section>
+      <section class="search-message" >
+        <img src="./search-city.png" alt="">
+        <h1>Search City</h1>
+        <h2>Find out the weather condition of a city</h2>
+      </section>
+      <section class="error-message">
+        <img src="./not-found.png" alt="">
+        <h1>Error </h1>
+        <h2>Plz Check the City Name</h2>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

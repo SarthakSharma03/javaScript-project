@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box ;
+    font-family: "Dancing Script", cursive;
+}
+body{
+    background: url(./bg.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+.container{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 360px;
+    height: 550px;
+    z-index: 1;
+    background: linear-gradient(rgb(0,0,0,0.15),rgb(225,225,225,0.15));
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 20px;
+}
+.city-input{
+    width: 100%;
+    height: 50px;
+    padding: 10px,16px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background: rgb(0,0,0,0.15);
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    padding-right: 35px;
+    
+}
+.search-btn{
+    position: absolute;
+    right: 30px;
+    top: 6%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.location{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.location-info{
+    display: flex;
+}
+.location-btn{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+.weather-info  , .error-message{
+    display: none;  
+}
+
+.search-message{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-message img{
+    padding-top: 10px;
+    width: 300px;
+    height: 320px;
+}
+.search-message h1{
+    padding-top: 10px;
+    font-size: 30px;
+} 
+.search-message h2{
+    display: flex;
+    font-size: 25px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+}
+.error-message img{
+    padding-top: 20px;
+    width: 320px;
+    height: 340px;
+}
+.error-message h1{ 
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 45px;
+}
+.error-message h2{
+    text-align: center;
+    font-size: 30px;
+}
+.weather-img{
+     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.city-date{
+     color: rgb(243, 234, 234);
+      font-size: 22px;
+}
+.temperature-icon{
+    background: none;
+    color: rgb(243, 234, 234);
+    border: none;
+    font-size: 22px;
+}
+
+.weather-additional-info{
+     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.humidity{
+    display: flex;
+    align-items: center;
+}
+.humidity-icon{
+    background: none;
+    color: rgb(243, 234, 234);
+    border: none;
+    font-size: 22px;
+}
+.humidity-info h3{
+ color: rgb(243, 234, 234);
+}
+.forcast-info{
+    padding-top:15px;
+    width: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.2px;
+    background:rgb(225,225,225,0.15) ;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.forcast{
+    display: flex;
+    gap: 5px;
+    padding-top: 6%;
+    overflow: scroll;
+    padding-bottom: 15px;
+}
+.forcast::-webkit-scrollbar{
+    display: none;
+}
