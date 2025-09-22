@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "name":"Chicken Burger",
+        "image":"./images/burger.png",
+        "price": "Rs 200"
+    },
+    {
+        "id":2,
+        "name":"Chicken-Roll",
+        "image":"./images/chicken-roll.png",
+        "price": "Rs 180"
+    },
+    {
+        "id":3,
+        "name":"Lasagna",
+        "image":"./images/lasagna.png",
+        "price": "Rs 250"
+    },
+    {
+        "id":4,
+        "name":"Pizza",
+        "image":"./images/pizza.png",
+        "price": "Rs 275"
+    },
+    {
+        "id":5,
+        "name":"Sandwich",
+        "image":"./images/sandwich.png",
+        "price": "Rs 175"
+    },
+    {
+        "id":6,
+        "name":"Spaghetti",
+        "image":"./images/spaghetti.png",
+        "price": "Rs 250"
+    },
+    {
+        "id":7,
+        "name":"Spring-Roll",
+        "image":"./images/spring-roll.png",
+        "price": "Rs 180"
+    },
+    {
+        "id":8,
+        "name":"Fried-Chicken",
+        "image":"./images/fried-chicken.png",
+        "price": "Rs 200"
+    }
+  
+    
+]

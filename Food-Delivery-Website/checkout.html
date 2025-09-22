@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Foodie</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+  <body>
+    <header>
+      <nav class="navbar flex between wrapper">
+        <a href="index.html" class="logo">Foodie .</a>
+        <ul class="navlist flex gap-3">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#menu">MENU</a></li>
+          <li><a href="index.html#Services">SERVICES</a></li>
+          <li><a href="about-us.html">ABOUT-US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="desktop-action flex gap-2">
+          <a href="index.html" class="btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Menu
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="checkout-section">
+      <div class="wrapper">
+        <div class="checkout-container">
+          <div class="order-summary">
+            <h2><i class="fa-solid fa-shopping-cart"></i> Order Summary</h2>
+            <div class="cart-items" id="checkout-cart-items">
+              </div>
+            <div class="order-totals">
+              <div class="total-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">Rs 0.00</span>
+              </div>
+              <div class="total-row">
+                <span>Delivery Fee:</span>
+                <span id="delivery-fee">Rs 50.00</span>
+              </div>
+              <div class="total-row total-final">
+                <span>Total:</span>
+                <span id="final-total">Rs 0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-form">
+            <h2><i class="fa-solid fa-user"></i> Delivery Information</h2>
+            <form id="checkout-form">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="address">Delivery Address *</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="3"
+                  required
+                  placeholder="Enter your complete address with landmarks"
+                ></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City *</label>
+                  <input type="text" id="city" name="city" required />
+                </div>
+                <div class="form-group">
+                  <label for="pincode">Pincode *</label>
+                  <input type="text" id="pincode" name="pincode" required />
+                </div>
+              </div>
+
+              <h3><i class="fa-solid fa-credit-card"></i> Payment Method</h3>
+              <div class="payment-methods">
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="cash"
+                    name="payment"
+                    value="cash"
+                    checked
+                  />
+                  <label for="cash">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Cash on Delivery
+                  </label>
+                </div>
+                <div class="payment-option">
+                  <input type="radio" id="card" name="payment" value="card" />
+                  <label for="card">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Credit/Debit Card
+                  </label>
+                </div>
+                <div class="payment-option">
+                  <input type="radio" id="upi" name="payment" value="upi" />
+                  <label for="upi">
+                    <i class="fa-solid fa-mobile"></i>
+                    UPI Payment
+                  </label>
+                </div>
+              </div>
+
+              <div class="checkout-actions">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="back-to-cart-btn"
+                >
+                  <i class="fa-solid fa-arrow-left"></i>
+                  Back to Cart
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="place-order-btn"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  Place Order
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
